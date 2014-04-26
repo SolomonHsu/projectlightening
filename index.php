@@ -23,7 +23,7 @@
                 ?> 
                 <header>
                     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <span class="article_meta">Written on <?php the_time(); ?> at <?php the_time(); ?> by <?php the_author_posts_link(); ?></span>
+                    <span class="article_meta">Written on <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> by <?php the_author_posts_link(); ?></span>
                     <span class="article_categories">Categories: <?php the_category(', '); ?></span>
                 </header>
 
