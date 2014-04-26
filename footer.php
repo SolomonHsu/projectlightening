@@ -1,7 +1,7 @@
 
         <div class="footer--bg">
             <footer>
-                <span>&copy; Project Lightning</span>
+                <span>&copy; Vivid Senses, 2014</span>
             </footer>
         </div> <!-- .footer--bg -->
 

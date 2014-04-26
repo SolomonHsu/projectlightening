@@ -5,3 +5,108 @@ Author: Project Lightning
 Description: WordPress theme
 Version: 0.1
 */
+
+body {
+    font-family: 'Exo', 'sans-serif';
+    font-family: 'Raleway', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+
+}
+
+.home nav {
+    overflow: hidden;
+}
+
+.home nav .btn {
+    display: block;
+    float: left;
+    width: 50%;
+    background: rgba(0,85,104,1);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: .7em 0;
+}
+
+.home nav .btn:hover {
+    background: rgba(0,85,104,.1);
+    color: rgba(0,85,104,1);
+}
+
+.home header {
+    font-size: 1.5em;
+}
+
+@media (min-width: 500px) { 
+    .home header {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 768px) { 
+    .home header {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 960px) { 
+    .home header {
+        font-size: 3em;
+    }
+}
+
+.home header .help {
+    font-size: .7em;   
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: block;
+    color: rgba(0,85,104,1);
+    margin: 1em auto 0;
+    width: 90%;
+}
+
+
+@media (min-width: 500px) { 
+    .home header .help {
+        font-size: .5em;
+    }
+}
+
+.home header h1 {
+    margin: .2em auto;
+    width: 90%;
+}
+
+.home header h1 span {
+    display: block;
+    color: rgba(0,85,104,1);
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.home header h1 span.the {
+    color: rgba(0,85,104,.6);
+}
+
+.home header h1 span.mobile {
+    font-size: 2em;
+}
+
+.home header h1 span.web {
+    font-size: 2.5em;
+    color: rgba(0,85,104,.8);
+}
+
+footer {
+    font-size: .8em;
+    width: 90%;
+    margin: 3em auto;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgba(0,85,104,.7);
+    font-weight: 100;
+}

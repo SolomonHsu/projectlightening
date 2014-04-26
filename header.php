@@ -16,6 +16,8 @@
 
         <title><?php bloginfo('name'); ?></title>
 
+        <link href='http://fonts.googleapis.com/css?family=Exo:400,900|Raleway:400,900,800' rel='stylesheet' type='text/css'>
+        <link href="<?php bloginfo('template_directory'); ?>/design/normalize.css" rel="stylesheet" />
         <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" />
 
         <script>
@@ -30,23 +32,5 @@
             */
         </script>
     </head>
-    <body>
-        <div class="header--full">
-            <header>
-                <h1>
-                    <a href="<?php bloginfo('url'); ?>">
-                        <?php bloginfo('name'); ?>
-                    </a>
-                </h1>
-                <span class="tagline">
-                    <?php bloginfo('description'); ?>
-                </span>
-            </header>
-        </div> <!-- .header--full -->
-        <div class="nav--full">
-
-            <nav class="site--nav">
-
-                <?php wp_nav_menu(); ?>
-            </nav>
-        </div> <!-- .nav--full -->
+    <body <?php body_class(); ?>>
+        
