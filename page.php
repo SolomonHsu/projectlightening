@@ -3,6 +3,7 @@
 <div class="main--full">
     <div class="main">
 
+        <?php get_sidebar(); ?>
         <section class="articles">
             <article>
 
@@ -22,7 +23,7 @@
 
         </section>
 
-        <?php get_sidebar(); ?>
+
 
     </div>
 

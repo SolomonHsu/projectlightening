@@ -12,20 +12,16 @@
         ?>
                     <header>
                         <h2><?php the_title(); ?></h2>
-                        <span class="article_meta">Written on <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> by <?php the_author_posts_link() ?></span>
+<!--                    <span class="article_meta">Written on <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> by <?php the_author_posts_link() ?></span>
                         <span class="article_categories">Categories: <?php the_category(', '); ?></span>
                     </header>
                     <p>
                         Written by: <?php the_author_posts_link(); ?> 
                     </p>
-                    
+-->                    
                     <?php the_content(); ?>
 
-                    </article>
-
-                    <?php comments_template(); ?>
-
-       
+                    </article>     
 
             <?php
                 endwhile;
