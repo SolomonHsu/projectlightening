@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
-<div class="main--full">
+<div class="main--full wrapper">
     <div class="main">
 
-        <section class="articles">
+        <?php get_sidebar(); ?>
+        <section class="menu articles">
             <?php if (is_category()) { ?>
-                <h1 class="title">Category: <?php single_cat_title(); ?></h1>
+                <!--<h1 class="title">Category: <?php single_cat_title(); ?></h1> -->
 
             <?php }
 
@@ -43,16 +44,12 @@
                     }
                 ?> 
                 <header>
-                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <span class="article_meta">Written on <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> by <?php the_author_posts_link() ?></span>
-                    <span class="article_categories">Categories: <?php the_category(', '); ?></span>
+                    <h2><?php the_title(); ?></a></h2>
                 </header>
 
                 <?php the_excerpt(); ?>
 
-                <nav>
-                    <a href="<?php the_permalink(); ?>">Read more...</a>
-                </nav>
+                <p class="price">$<?php the_field('item_price'); ?></p>
 
                 <hr />
             </article>
@@ -63,7 +60,6 @@
 
         </section>
 
-        <?php get_sidebar(); ?>
 
     </div>
 

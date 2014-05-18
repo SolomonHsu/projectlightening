@@ -1,6 +1,7 @@
+<?php /* Template Name: Home Page */ ?>
 <?php get_header(); ?>
 
-<div class="main--full wrapper">
+<div class="main--full">
     <div class="main">
 
         <section class="articles">
@@ -24,15 +25,9 @@
                 <header>
                     <h2><?php the_title(); ?></h2>
 
-<!--                <span class="article_meta">Written on <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> by <?php the_author_posts_link(); ?></span>
-                    <span class="article_categories">Categories: <?php the_category(', '); ?></span>
--->
             <?php the_content(); ?>
-            <?php the_field('photos'); ?>
+            <?php the_field('google_map'); ?>
                 </header>
-
-                <!--<?php the_excerpt(); ?> -->
-
 
                 <hr />
             </article>

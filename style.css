@@ -5,3 +5,192 @@ Author: Project Lightning
 Description: WordPress theme
 Version: 0.1
 */
+
+body{
+	/*background-color: #7A0F00;*/
+}
+
+body a{
+	color: #7A0F00;
+	text-decoration: none;
+}
+
+body a:visited{
+	color: #7A0F00;
+}
+
+div #sidebar{
+	display: none;
+}
+
+h1 {
+	margin: 0;
+}
+
+h2{
+	margin: 0;
+}
+
+nav{
+	
+}
+
+.main{
+	clear: both;
+}
+
+#sidebar{
+	float: left;
+	width: 20%;
+}
+
+#sidebar ul{
+	list-style: none;
+}
+
+.articles{
+	float: left;
+	margin-left: 10px;
+}
+
+/*footer*/
+div.footer--bg{
+	clear: both;
+}
+
+footer{
+	clear: both;
+	text-align: center;
+}
+
+.logo{
+	text-align: center;
+}
+
+/*mobile nav */
+.site--nav{
+	text-align: center;
+	width: 100%;
+}
+
+.site--nav div{
+	width: 22em;
+	margin: 0 auto;
+}
+
+.site--nav li{
+	display: inline;
+}
+
+.site--nav li a{
+	padding: 10px;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li{
+	margin: 2px;
+
+}
+
+nav.mobile{
+	display: block;
+}
+
+nav.mobile ul{
+	display: block;
+	width: 9em;
+	margin:0 auto;
+}
+
+/*destop nav*/
+nav.desktop{
+	display: none;
+}
+
+
+/*homepage style*/
+section.homepage{
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+section.homepage iframe{
+	width: 100%;
+}
+
+/*menu style*/
+section.food_menu--items{
+	width: 80%;
+	margin: 0 auto;
+}
+
+section.food_menu--items article h3{
+	float: left;
+}
+
+section.food_menu--items p.price{
+	float: right;
+}
+
+section.food_menu--items hr{
+	clear: both;
+}
+
+/*Page Content*/
+.content--left{
+	float: none;
+	clear: both;
+}
+
+.content--right{
+	float: none;
+	clear: both;
+}
+
+@media (min-width: 720px){
+
+	/*Page Content*/
+	.content--left{
+		float: left;
+		clear: both;
+	}
+
+	.content--right{
+		float: right;
+		clear: both;
+	}
+
+	.wrapper{
+		width: 80%;
+		clear: both;
+		float: none;
+		margin: 0 auto;
+		background-color: #FFD197;
+	}
+
+	div.sidebar{
+		display: block;
+	}
+
+	nav.mobile{
+		display: none;
+	}	
+
+	nav.desktop{
+		display: block;
+	}
+	section.homepage{
+		width: 45%;
+	}
+
+	.main{
+		
+	}
+
+}

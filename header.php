@@ -4,6 +4,8 @@
         <meta http-equiv="x-ua-compatible" content="IE=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="tokyosushi.com" />
 
         <meta name="description" content="Website description goes here" />
         <meta name="keywords" content="Site keywords go here" />
@@ -17,6 +19,8 @@
         <title><?php bloginfo('name'); ?></title>
 
         <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" />
+        <link rel="icon" sizes="196x196" href="mobile_web--logo.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
 
         <script>
             /*
@@ -31,9 +35,9 @@
         </script>
     </head>
     <body>
-        <div class="header--full">
+        <div class="header--full wrapper">
             <header>
-                <h1>
+                <h1 class="logo">
                     <a href="<?php bloginfo('url'); ?>">
                         <?php bloginfo('name'); ?>
                     </a>
@@ -43,10 +47,16 @@
                 </span>
             </header>
         </div> <!-- .header--full -->
-        <div class="nav--full">
+        <div class="nav--full wrapper">
 
-            <nav class="site--nav">
+            <nav class="site--nav mobile">
+                <ul>
+                    <li><a class="btn" href="tel:416-513-0002">Call</a></li>
+                    <li><a class="btn" href="http://localhost/tokyosushi/?post_type=menu">Menu</a></li>
+                </ul>
+            </nav>
 
+            <nav class="site--nav desktop">
                 <?php wp_nav_menu(); ?>
             </nav>
         </div> <!-- .nav--full -->

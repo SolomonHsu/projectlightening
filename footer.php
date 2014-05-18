@@ -1,5 +1,5 @@
 
-        <div class="footer--bg">
+        <div class="footer--bg wrapper">
             <footer>
                 <span>&copy; Project Lightning</span>
             </footer>
