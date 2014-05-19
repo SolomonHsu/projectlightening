@@ -1,31 +1,38 @@
 <?php get_header(); ?>
 
-<div class="main--full">
+<div class="container--main">
     <div class="main">
-
-        <section class="articles">
+        <div class="main--content">
             <article>
 
-            <?php
-                while(have_posts()):
-                    the_post();
-            ?>
-                    <h2>
-                            <?php the_title(); ?>
-                    </h2>
-            <?php the_content();
+                <?php
+                    while(have_posts()):
+                        the_post();
+                ?>
+                    <header>
+                        <h1><?php the_title(); ?></h1>
+                    </header>
+                    
+                    <div class="container--article_body">
+                        <section class="article_body">
+                            <div class="article_body--content">
+                                <?php the_content(); ?>
+                            </div>
+                        </section>
+                    </div>
 
-                endwhile;
+                <?php endwhile; ?>
+            </article>
 
-            ?>
-        </article>
+        </div> <!-- .main--content -->
 
-        </section>
+    </div> <!-- .main -->
 
-        <?php get_sidebar(); ?>
+</div> <!-- .container--main -->
 
-    </div>
-
-</div> <!-- .main--full -->
+<nav class="details">
+    
+        <?php wp_nav_menu(); ?>
+</nav>
 
 <?php get_footer(); ?>
